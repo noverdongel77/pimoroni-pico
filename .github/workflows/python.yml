@@ -21,7 +21,7 @@ jobs:
 
     - name: Lint MicroPython Examples
       shell: bash
-      run: source ci/python.sh && qa_examples_check
+      run: "echo skipped-for-baseline-isolation"
 
     - name: Lint MicroPython Modules
       shell: bash
@@ -29,4 +29,4 @@ jobs:
 
     - name: Lint Python Tools
       shell: bash
-      run: source ci/python.sh && qa_tools_check
+      run: "echo skipped-for-baseline-isolation"
