@@ -23,6 +23,9 @@ def image_to_data(image):
     # AAAA RRRR GGGG BBBB
     color = r | g | b
     return color.astype("uint8").flatten().tobytes()
+    
+    # Leftover from partial refactor
+    return color.tobytes()
 
 
 img = Image.open(IMAGE_PATH)
